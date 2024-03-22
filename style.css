@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'inter';
+    src: url(images/Inter-VariableFont_slnt\,wght.ttf) format('truetype');
+}
+:root {
+    --Dark-Blue: hsl(240, 38%, 20%);
+    --Grayish-Blue: hsl(240, 18%, 77%);
+    --ff-inter: 'inter';
+    --fs-320: 18px;
+    --fw-300: 300;
+    --fw-500: 500;
+    --fw-700: 700;
+}
+.ff-inter {
+    font-family: var(--ff-inter);
+    line-height: 1.4;
+}
+.fs-320 {
+    font-size: var(--fs-320);
+}
+.fw-300 {
+    font-weight: var(--fw-300);
+}
+.fw-500 {
+    font-weight: var(--fw-500);
+}
+.fw-700 {
+    font-weight: var(--fw-700);
+}
+.flex {
+    display: flex;
+}
+.capitalize {
+    text-transform: capitalize;
+}
+.text-color {
+    color: var(--Dark-Blue);
+}
+.text-gray {
+    color: var(--Grayish-Blue);
+}
+img {
+    max-width: 100%;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+}
+body, h1, h2, h3, h4, h5, p {
+    margin: 0;
+}
+h1, h2, h3, h4, h5 p {
+    font-weight: 300;
+}
+button,
+textarea,
+select,
+input {
+    font: inherit;
+}
+.bg-body {
+    background: url('images/pattern-curve.svg') no-repeat left bottom/contain;
+}
+body {
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+.container {
+    width: 90%;
+    max-width: 375px;
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+}
+.image-buttons {
+    padding: 0 2rem 1rem 2rem;
+    background: url('images/pattern-bg.svg') no-repeat center/contain;
+    flex-direction: column;
+    align-items: center;
+}
+.preview {
+    background: url('images/pattern-quotes.svg') no-repeat top center;
+    background-size: 20%;
+}
+
+.image-buttons > img {
+    padding: 0 1rem 1rem 1rem;
+    margin-top: 2rem;
+}
+.btns > button {
+    margin-inline: 1rem;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+.btns {
+    background: #fff;
+    padding: .5rem .5rem;
+    border-radius: 30px;
+    margin-top: -2rem;
+    z-index: 10;
+    box-shadow: 0 0 3px 0 #000;
+}
+.intro {
+    flex-direction: column;
+    margin: 1rem 0;
+}
+.intro > p {
+    font-size: 16px;
+}
